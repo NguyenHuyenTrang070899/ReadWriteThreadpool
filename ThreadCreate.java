@@ -21,8 +21,6 @@ public class ThreadCreate {
 					t2.addQueue(line);
 				}
 			}
-			t1.Stop();
-			t2.Stop();
 			br.close();
 			long end = System.currentTimeMillis();
 			System.out.println("Time to read file A and write file B, C: " + ((end - start)/1000) + "s");
