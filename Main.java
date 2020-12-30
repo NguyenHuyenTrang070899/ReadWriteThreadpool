@@ -5,8 +5,8 @@ public class Main {
 		File file = new File("A.txt");
 		
 		//Write file A
-		WriteFileA.writeToA(file);
-		
+		WriteToA w = new WriteToA();
+		w.writeFileA(file);
 		//Write file B, C
 		ThreadCreate t = new ThreadCreate();
 		t.startThread(file);
